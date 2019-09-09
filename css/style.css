@@ -344,6 +344,28 @@ figure figcaption {
     position: relative;
 }
 
+#colorlib-hero .flexslider .slides li .overlay-text {
+    display: block;
+    position: absolute;
+    padding-left: 70px;
+    bottom: 0px;
+    width: 100%;
+    height: 140px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.6) 65%, rgba(0,0,0,0) 100%);
+}
+#colorlib-hero .flexslider .slides li .overlay-text h2 {
+    color: #FFF;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin-top: 43px;
+}
+#colorlib-hero .flexslider .slides li .overlay-text p {
+    color: #FFF;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
 #colorlib-hero .flexslider .flex-control-nav {
     bottom: 20px;
     z-index: 1000;
@@ -365,7 +387,8 @@ figure figcaption {
 }
 
 #colorlib-hero .flexslider .flex-control-nav li a {
-    background: rgba(0, 0, 0, 0.5);
+    background: transparent;
+    border: 2px solid #FFFFFF8C;
     -webkit-box-shadow: none;
     box-shadow: none;
     width: 12px;
@@ -388,6 +411,14 @@ figure figcaption {
     opacity: 0;
     min-height: 500px;
     z-index: 9;
+}
+
+#colorlib-hero .flexslider .slider-text>.slider-text-inner {
+    display: table-cell;
+    vertical-align: middle;
+    min-height: 70px;
+    padding: 2.5em;
+    position: relative;
 }
 
 #colorlib-hero .flexslider .slider-text>.slider-text-inner {
@@ -947,6 +978,8 @@ body.offcanvas .colorlib-nav-toggle {
     height: 130px;
     border-radius: 50%;
     display: block;
+    background-position: unset;
+    background-size: cover;
 }
 
 .services .desc {
